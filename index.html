@@ -4,6 +4,7 @@
 		<title>Product Landing Page</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Russo+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -19,13 +20,52 @@
 			<!--right side -->
 			<nav id="nav-bar">
 				<ul>
-					<li>Signup</li>
-					<li>How It Works</li>
-					<li>Pricing</li>
+					<a href="#form" class="nav-link"><li>Signup</li></a>
+					<a href="#video" class="nav-link"><li>How It Works</li></a>
+					<a href="#pricing" class="nav-link"><li>Pricing</li></a>
 				</ul>
 			</nav> 
 
 			
 		</header>
+
+		<main>
+			
+			<!-- Signup form -->
+			<section >
+				<form id="form">
+					<h3 class="form-item" id="signupLabel">Signup for FREE 1st Month Membership</h3>
+
+					<div class="form-item">
+					<label id="label-fullName" for="fullName">Name </label>
+					<input type="text" id="fullName" name="fullName" placeholder="Full Name " required autofocus>
+					</div>
+
+					<div class="form-item">
+					<label id="label-email" for="email">Email </label>
+					<input type="email" id="email" name="email" placeholder="Email "required autofocus>
+					</div>
+
+					<div class="form-item">
+					<label id="label-mobile" for="mobile">Mobile </label>
+					<input type="tel" id="mobile" name="mobile" placeholder="(917)-123-4567" required autofocus
+					patter="([0-9]{3})-[0-9]{3}-[0-9]{4}">
+					</div>
+
+					<div class="form-item space-top">
+					<button id="submit" name="submit">Submit</button>
+					</div>
+
+					<div id="form-foot">
+						
+							<li id="fb"><i class="fab fa-facebook-f"></i></li>
+							<li id="tw"><i class="fab fa-twitter"></i></li>
+							<li id="in"><i class="fab fa-instagram"></i></li>
+						
+					</div>
+				</form>
+			</section>
+
+		</main>
 	</body>
 </html>
