@@ -1,9 +1,7 @@
-html, body{
-	padding:0;
-	margin:0;
-	font-family: 'Roboto', sans-serif;
-	background-color: #fff;
-	min-height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -11,7 +9,6 @@ header{
 	min-height: 75px;
 	padding-left: 20px;
 	background-color: #ecf0f1;
-	max-width: 100%;
 	padding-right: 50px;
 	display: flex;
 	flex-direction: row;
@@ -22,8 +19,14 @@ header{
 	top:0;
 	min-width: 100%;
 
-	@media (max-width: 600px){
-		position:relative;
+}
+
+@media (max-width: 600px){
+	header{
+		flex-wrap:wrap;
+		flex-direction: column;
+		text-align: center;
+		position: relative;
 	}
 }
 
@@ -65,11 +68,26 @@ h1{
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
+
+}
+
+@media (max-width:600px){
+	#nav-bar ul{
+		flex-direction:column;
+		justify-content: center;
+	}
 }
 
 #nav-bar li{
 	margin-left : 50px;
 	list-style:none;
+	display:flex;
+
+	@media (max-width:550px){
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+	}
 }
 
 a:link{
@@ -179,6 +197,12 @@ main{
 	justify-content: center;
 }
 
+iframe{
+	max-width: 550px;
+	width: 100%;
+}
+
+
 
 /*bootcamp*/
 
@@ -190,15 +214,26 @@ main{
 
 }
 
+
+@media (max-width: 600px){
+	#bootcamp{
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 20px;
+	}
+}
+
 .bootcampBox{
 	background-color: #ecf0f1;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
 	min-width: 200px;
+	max-width: 100%;
 	padding:20px;
 	text-align: center;
 	margin: 10px;
+
 }
 
 .bootcampBox i{
